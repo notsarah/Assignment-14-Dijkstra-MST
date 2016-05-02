@@ -1,0 +1,68 @@
++-------------------------------------------+
+|                                           |
+|   ASSIGNMENT #14                          |
+|               Dijkstra & MST              |
+|                                           |
+|                  by:                      |
+|            Sarah Singletary               |
+|                                           |
++-------------------------------------------+
+
+DESCRIPTION:
+---------------------------------------------------
+This program implements a graph that performs a
+ Dijkstra's algorithm that finds the shortest
+ distance from at Atlanta to the cities on the map.
+ The program also determines the minimum spanning
+ tree. It identifies the edges and total mileage.
+
+
++------------------------+
+|  Dijkstra's Algorithm  |
++------------------------+
+VERTEX         DISTANCE FROM Atlanta
+Denver                  1463
+Chicago                 1417
+Seattle                 2794
+Dallas                  781
+Houston                 810
+Boston                  1102
+New York                888
+Atlanta                 0
+Miami                   661
+San Francisco           2597
+Los Angeles             2216
+Kansas City             864
+
++-------------+
+| PATHS TAKEN |
++-------------+
+Atlanta ---> Kansas City	--  864
+Dallas ---> Los Angeles	--  1435
+Los Angeles ---> San Francisco	--  381
+Atlanta ---> Miami	--  661
+Atlanta ---> New York	--  888
+New York ---> Boston	--  214
+Atlanta ---> Houston	--  810
+Atlanta ---> Dallas	--  781
+Denver ---> Seattle	--  1331
+Kansas City ---> Chicago	--  553
+Kansas City ---> Denver	--  599
+
++-------------------------+
+|  Minimum Spanning Tree  |
++-------------------------+
+EDGES                              WEIGHT
+Kansas City - Chicago               553
+San Francisco - Seattle             807
+Kansas City - Dallas                496
+Dallas - Houston                    239
+New York - Boston                   214
+Chicago - New York                  787
+Dallas - Atlanta                    781
+Atlanta - Miami                     661
+Los Angeles - San Francisco         381
+Denver - Los Angeles                1015
+Denver - Kansas City                599
+
+TOTAL MILEAGE: 6533
